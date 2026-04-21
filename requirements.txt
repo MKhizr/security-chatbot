@@ -5,3 +5,11 @@ sentence-transformers
 chromadb
 requests
 pytest
+langchain
+langchain-community
+langchain-ollama
+langchain-chroma
+pypdf
+fastapi
+uvicorn
+python-dotenv

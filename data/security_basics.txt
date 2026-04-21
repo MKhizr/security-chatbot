@@ -1,0 +1,33 @@
+NIST 800-53 Access Control
+
+AC-1: Policy and Procedures
+Organizations must develop, document, and disseminate access control policies and procedures.
+These policies must address purpose, scope, roles, responsibilities, and compliance.
+
+AC-2: Account Management
+Organizations must manage information system accounts including establishing, activating,
+modifying, reviewing, disabling, and removing accounts. Account management includes
+identifying account types, establishing conditions for group membership, and specifying
+authorized users of the system.
+
+AC-3: Access Enforcement
+The system must enforce approved authorizations for logical access to information and
+system resources. This includes controlling access based on roles and need-to-know.
+
+AC-17: Remote Access
+Organizations must establish usage restrictions and implement guidance for remote access
+sessions. All remote access sessions must be monitored and controlled.
+
+Incident Response
+
+IR-1: Incident Response Policy
+Organizations must develop an incident response policy that addresses purpose, scope,
+roles, and responsibilities. The policy must be reviewed and updated regularly.
+
+IR-4: Incident Handling
+Organizations must implement an incident handling capability for security incidents
+including preparation, detection, analysis, containment, eradication, and recovery.
+
+IR-6: Incident Reporting
+Organizations must report security incidents to appropriate authorities within defined
+timeframes. Personnel must report suspected incidents to the incident response team.
