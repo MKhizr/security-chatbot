@@ -53,7 +53,6 @@ ollama serve                        # terminal tab 1
 ollama pull mistral
 python -m src.week2.gradio_app      # terminal tab 2
 ```
-Open http://127.0.0.1:7861
 
 ### Example output
 Input: `185.220.101.45`
