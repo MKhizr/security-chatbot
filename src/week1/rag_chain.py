@@ -65,7 +65,8 @@ Question:
 
 Answer:""")
 
-    llm = OllamaLLM(model=OLLAMA_MODEL)
+    ollama_host = os.getenv("OLLAMA_HOST", "http://localhost:11434")
+    llm = OllamaLLM(model=OLLAMA_MODEL, base_url=ollama_host)
 
     chain = (
         {"context": retriever, "question": RunnablePassthrough()}
