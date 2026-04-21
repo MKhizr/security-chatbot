@@ -18,7 +18,6 @@ ollama serve                        # terminal tab 1
 ollama pull llama3.2
 python -m src.week1.gradio_app      # terminal tab 2
 ```
-Open http://127.0.0.1:7860
 
 ### Run the API
 ```bash
@@ -34,7 +33,6 @@ curl -X POST http://127.0.0.1:8000/ask \
 python -m src.week1.evaluate
 mlflow ui --backend-store-uri sqlite:///mlflow.db --port 5001
 ```
-Open http://127.0.0.1:5001
 
 ---
 
