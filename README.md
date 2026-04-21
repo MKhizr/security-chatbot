@@ -38,7 +38,7 @@ Open http://127.0.0.1:5001
 
 ---
 
-## Project 2 — Threat Intel Triage Agent
+## Threat Intel Triage Agent
 
 An autonomous AI agent that investigates indicators of compromise (IOCs) —
 IP addresses, file hashes, and URLs — by reasoning over multiple threat
