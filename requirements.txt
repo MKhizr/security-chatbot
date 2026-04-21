@@ -1,0 +1,7 @@
+anthropic
+openai
+python-dotenv
+sentence-transformers
+chromadb
+requests
+pytest
