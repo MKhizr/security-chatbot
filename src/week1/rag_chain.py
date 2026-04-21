@@ -1,7 +1,7 @@
 from langchain_ollama import OllamaLLM
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
@@ -76,3 +76,22 @@ Answer:""")
     )
 
     return chain, vectorstore
+
+def build_index_only():
+    """Build just the vectorstore without the full chain - for evaluation."""
+    docs = load_documents()
+    if not docs:
+        return None
+
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=500,
+        chunk_overlap=50
+    )
+    chunks = splitter.split_documents(docs)
+    embeddings = HuggingFaceEmbeddings(model_name=EMBED_MODEL)
+    vectorstore = Chroma.from_documents(
+        documents=chunks,
+        embedding=embeddings,
+        collection_name="security_docs_eval"
+    )
+    return vectorstore

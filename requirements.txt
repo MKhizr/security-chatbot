@@ -14,3 +14,10 @@ pypdf
 fastapi
 uvicorn
 python-dotenv
+ragas
+mlflow
+gradio
+datasets
+langchain-text-splitters
+sacrebleu
+rouge-score
