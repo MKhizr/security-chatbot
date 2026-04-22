@@ -11,7 +11,7 @@ A RAG-powered chatbot that answers natural language questions about NIST 800-53 
 
 **Stack:** Python 3.11 · LangChain · ChromaDB · sentence-transformers · Groq (Llama 3.1 8B) · FastAPI · Gradio · MLflow · Docker
 
-Live demo:** https://khizrsec-security-chatbot.hf.space
+Live demo: https://khizrsec-security-chatbot.hf.space
 
 ### Run locally
 
@@ -27,13 +27,13 @@ Open http://127.0.0.1:7860
 
 ---
 
-## Project 2 — Threat Intel Triage Agent
+## Threat Intel Triage Agent
 
 An autonomous AI agent that investigates indicators of compromise — IP addresses, file hashes, and URLs. The agent decides which tools to call, queries VirusTotal, Shodan, and MITRE ATT&CK automatically, then synthesizes findings into a structured JSON threat report.
 
 **Stack:** Python 3.11 · LangGraph · Groq (Llama 3.3 70B) · VirusTotal API · Shodan API · MITRE ATT&CK · Gradio · Pydantic
 
-Live demo:** https://khizrsec-threat-intel-agent.hf.space
+Live demo: https://khizrsec-threat-intel-agent.hf.space
 
 ### Run locally
 
