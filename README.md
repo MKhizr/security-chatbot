@@ -10,6 +10,8 @@ A RAG-powered chatbot that answers questions about NIST 800-53 security controls
 
 **Evaluation:** BLEU, ROUGE --> tracked in MLflow across multiple runs
 
+**Live demo:** https://khizrsec-security-chatbot.hf.space
+
 ### Run it
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
