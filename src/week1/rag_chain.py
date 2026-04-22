@@ -1,4 +1,4 @@
-from langchain_ollama import OllamaLLM
+from langchain_groq import ChatGroq
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -9,7 +9,7 @@ from langchain_community.document_loaders import DirectoryLoader, TextLoader
 import os
 
 EMBED_MODEL = "all-MiniLM-L6-v2"
-OLLAMA_MODEL = "llama3.2"
+
 
 
 def load_documents():
@@ -65,8 +65,7 @@ Question:
 
 Answer:""")
 
-    ollama_host = os.getenv("OLLAMA_HOST", "http://localhost:11434")
-    llm = OllamaLLM(model=OLLAMA_MODEL, base_url=ollama_host)
+    llm = ChatGroq(model="llama-3.1-8b-instant", api_key=os.getenv("GROQ_API_KEY"))
 
     chain = (
         {"context": retriever, "question": RunnablePassthrough()}
