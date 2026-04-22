@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: security-chatbot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m src.week1.gradio_app
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: APP_API_KEY
+        sync: false
