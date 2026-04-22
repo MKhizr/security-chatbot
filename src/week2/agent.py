@@ -1,7 +1,7 @@
 import os
 import json
 from dotenv import load_dotenv
-from langchain_ollama import ChatOllama
+from langchain_groq import ChatGroq
 from langgraph.prebuilt import create_react_agent
 from pydantic import BaseModel
 from typing import List
@@ -55,9 +55,9 @@ No explanation, no markdown, just a JSON object with these exact fields:
 
 
 def build_agent():
-    llm = ChatOllama(
-        model="mistral",
-        base_url=os.getenv("OLLAMA_HOST", "http://localhost:11434"),
+    llm = ChatGroq(
+        model="llama-3.3-70b-versatile",
+        api_key=os.getenv("GROQ_API_KEY")
     )
     tools = [virustotal_lookup, shodan_lookup, mitre_technique_lookup]
     agent = create_react_agent(
